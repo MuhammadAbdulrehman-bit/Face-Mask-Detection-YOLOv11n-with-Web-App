@@ -45,7 +45,9 @@ pip install ultralytics opencv-python winsound streamlit pandas pillow
 
 - Mask Wearing.v1i.yolov8 folder contains the dataset for training the model, in case if you wanted to train the model by yourself.
 
+
 - Inside the Mask Wearing.v1i.yolov8 folder, it will contain data.yaml file. When you open it, it will look like this:
+
 
 ```bash
 train: E:\New folder\Face Mask Detection\Mask Wearing.v1i.yolov8/train/images #change the file path accordingly
@@ -63,12 +65,14 @@ roboflow:
   url: https://universe.roboflow.com/muhammad-abdul-rehman-buhdh/mask-wearing-uqr7d/dataset/1
 ```
 
+
 - Once you set the file path according to the file path where the folder is stored, you need to run the following command in terminal:
   ``` bash
   yolo detect train data=data.yaml model=yolov8n.pt epochs=50 imgsz=640 #set epochs to whatever you want and imgsz should not be changed no matter what
   ```
   
 - Upon completing the above step, the model will begin to train. After it has been trained, a run folder will be generated containing the best weights.
+
 
 - Runs folder contains the best weights and bias for the model. If you train your model, then after training it, go to this folder and search for those ***"train"*** folders, which have ***"best.pt"***. Then in the detect file, change this code:
  
@@ -81,6 +85,8 @@ roboflow:
   ```
 
 - Then follow the instructions above heading **How to Run** to do the rest.
+
+
 
 ## Cameara Not Working?
 
