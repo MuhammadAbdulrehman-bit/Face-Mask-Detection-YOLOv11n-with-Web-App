@@ -1,0 +1,15 @@
+train: E:\New folder\Face Mask Detection\Mask Wearing.v1i.yolov8/train/images
+val: E:\New folder\Face Mask Detection\Mask Wearing.v1i.yolov8/valid/images
+test: E:\New folder\Face Mask Detection\Mask Wearing.v1i.yolov8/test/images
+
+nc: 2
+names: ['mask', 'no-mask']
+
+roboflow:
+  workspace: muhammad-abdul-rehman-buhdh
+  project: mask-wearing-uqr7d
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/muhammad-abdul-rehman-buhdh/mask-wearing-uqr7d/dataset/1
+
+  
